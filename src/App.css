@@ -2,37 +2,168 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+  position: absolute;
+  top: 0;
+
+  background-image: url(./img/seinfriends.jpg);
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  z-index: 1;
+  width: 250px;
+  margin-top: 20px;
+}
+
+.question-panel,
+.scores {
+  color: #fff;
+
+  position: absolute;
+  width: 500px;
+  height: fit-content;
+  margin-bottom: 20px;
+
+  background: #2078c1D8;
+  top: 25%;
+  padding: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.count {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 30px;
+  height: 130px;
+}
+
+@media only screen and (max-width: 500px) {
+  .question {
+    height: 250px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.answers {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+.scores {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.final-score {
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.score-gif {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+  .question-panel,
+  .scores {
+      width: 350px;
+      top: 20%;
   }
-  to {
-    transform: rotate(360deg);
+  .score-gif {
+    max-width: 300px;
   }
+  .background {
+    background-position-x: center;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  margin: 3px 0;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: #e6432d;
+  background-color: #fcd933;
+  outline: none;
+  width: 280px;
+  align-self: center;
+  -webkit-appearance: none;
+
+}
+
+.btn:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+.btn:hover {
+  color: #2078c1;
+  border-color: currentColor;
+}
+
+.btn-sml {
+  width: 180px;
+}
+
+/* !important fyrir símahakk*/
+.correct-answer {
+  background-color: #5bfc33 !important;
+  color: #fff !important;
+}
+
+.wrong-answer {
+  background-color: #e6432d !important;
+  color: #fff !important;
+}
+
+.correct-answer:hover,
+.wrong-answer:hover {
+  color: #fff;
+  border-color: #2078c1;
+}
+
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 1024px) {
+    .btn:hover {
+      color: #e6432d;
+      background-color: #fcd933;
+      border: solid 1px transparent;
+    }
 }
