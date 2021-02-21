@@ -34,7 +34,7 @@
   height: fit-content;
   margin-bottom: 20px;
 
-  background: #2078c1D8;
+  background: #2078c1d8;
   top: 25%;
   padding: 20px;
   border-radius: 4px;
@@ -68,6 +68,7 @@
   flex-direction: column;
   margin: 5px;
   margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .scores {
@@ -81,19 +82,11 @@
   font-size: 30px;
 }
 
-.score-gif {
-  margin-bottom: 20px;
-  width: 400px;
-}
-
 @media only screen and (max-width: 500px) {
   .question-panel,
   .scores {
-      width: 350px;
-      top: 20%;
-  }
-  .score-gif {
-    max-width: 300px;
+    width: 350px;
+    top: 20%;
   }
   .background {
     background-position-x: center;
@@ -124,7 +117,6 @@ button {
   width: 280px;
   align-self: center;
   -webkit-appearance: none;
-
 }
 
 .btn:active {
@@ -158,12 +150,16 @@ button {
   border-color: #2078c1;
 }
 
-@media only screen 
-and (min-device-width : 300px) 
-and (max-device-width : 1024px) {
-    .btn:hover {
-      color: #e6432d;
-      background-color: #fcd933;
-      border: solid 1px transparent;
-    }
+.start-video {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1024px) {
+  .btn:hover {
+    color: #e6432d;
+    background-color: #fcd933;
+    border: solid 1px transparent;
+  }
 }
