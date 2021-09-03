@@ -94,7 +94,7 @@ const QUIZ_DATA = [
     imageUrl: "",
   },
   {
-    question: "The catalogs of what store prompt Kramer to stop his mail?",
+    question: "The catalogs of what store prompts Kramer to stop his mail?",
     answers: ["Ikea", "JCPenney", "Pottery Barn", "Sears"],
     correct_answer: "Pottery Barn",
     imageUrl: "",
